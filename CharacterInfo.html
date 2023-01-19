@@ -18,10 +18,10 @@
       <nav class="navbar container-fluid">
         <div class="site-logo">
           <a href="#" rel="home">
-            <img src="./Images/Misc/dislyte.logo2.webp" alt="" />
+            <img src="./Images/Misc/dislyte.logo2.webp" alt="Dislyte-Logo" />
           </a>
         </div>
-        <div class="container nav-content min-vh-25">
+        <div class="container nav-content">
           <ul class="nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -33,7 +33,7 @@
               <a class="nav-link" href="#">Characters</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Tier List</a>
+              <a class="nav-link" href="./TierList.html">Tier List</a>
             </li>
             <li class="nav-item">
               <a class="nav-link">Codes</a>
@@ -53,16 +53,16 @@
         <div class="content-area col">
           <main class="site-main container-lg" id="main">
             <article class="article-main row mt-4">
-              <div class="container summaryInfo">
-                <div class="row">
+              <div class="container summaryContainer">
+                <div class="row summaryContent">
                     <div class="article-left col-4">
-                        <div class="article-image">
-                          <img src="./Images/Fullbody/Skills/Abigail/Abigail_sprite.webp" alt="Abigail">
-                        </div>
-
+                          <img class="article-deskimage" src="./Images/Fullbody/Skills/Abigail/Abigail_sprite.webp" alt="Abigail">
                       </div>
     
                       <div class="article-right col">
+                        <div class="mobileimage-container">
+                          <img class="mobileimage" src="./Images/Fullbody/Skills/Abigail/Abigail_sprite.webp" alt="">
+                        </div>
                         <div class="charName">
                           <div class="d-flex flex-column">
                             <h3 class="mb-0">Abigail</h3>
@@ -74,21 +74,32 @@
                             “If you want to win, you need to sacrifice the useless
                             pieces on the board.”
                           </p>
-                          <span>Legendary 5 Star</span>
+                          <div class="legendSign">
+                            <span>Legendary</span>
+                          </div>                  
                         </div>
       
-                        <div class="row mt-4">
-                          <div class="element col">Role</div>
-                          <div class="element col">Attribute</div>
-                          <div class="element col">Rarity</div>
+                        <div class="row mt-2">
+                          <div class="element col">
+                            <div>
+                              <span><img src="./Images/Misc/Inferno.png" alt=""></span>
+                            </div>
+                          </div>
+                          <div class="element col"><img style="height: 20px;" src="./Images/Misc/5star.webp" alt=""></div>
+                          <div class="element col">
+                            <div class="supportSign">
+                              <span>Support</span>
+                            </div>
+                          </div>
+                      
                         </div>
                         <div class="charDesc mt-5 row">
                           <span class="infoTitle">Summary</span>
-                          <p>
+                          <p class="mt-3">
                             She, the Frigga’s power, is the queen of the snowfields.
                           </p>
       
-                          <p class="text-start">
+                          <p class="text-start mt-3">
                             Abigail is a defensive Support Esper who is also good at
                             dealing damage. When Thorny Brambles deals damage to a
                             single target, it has a chance of inflicting Sleep. Rose
@@ -100,7 +111,7 @@
                         </div>
                         <div class="proscons text-start row p-3 gx-5">
                           <span class="infoTitle text-center">Pros & Cons</span>
-                          <ul class="pros col">
+                          <ul class="pros col mt-2">
                             <li>Support with good utilty</li>
                             <li>
                               Has attack up, absorb (lifesteal for allies) and revive
@@ -112,7 +123,7 @@
                             </li>
                             <li>Universal HP leader</li>
                           </ul>
-                          <ul class="cons col">
+                          <ul class="cons col mt-2">
                             <li>Skill 3 cooldown is long</li>
                             <li>Lacks damage</li>
                           </ul>
@@ -142,7 +153,7 @@
                         <div>
                           <p class="mt-3 text-start lh-base">
                             Attacks 1 enemy. Deals 120% ATK damage. Inflicts
-                            Sleep for 1 turn. <br />
+                            <span class="fw-bold">Sleep</span> for 1 turn. <br />
                             <br />
                             Heals 3% of Frigga's max HP.
                           </p>
@@ -163,8 +174,8 @@
                         </div>
                         <div>
                           <p class="mt-3 text-start lh-base">
-                            Gains Recovery for 2 turns. Grants DEF Up and a
-                            Shield to all allies for 2 turns. Shield strength
+                            Gains <span class="fw-bold">Recovery</span> for 2 turns. Grants <span class="fw-bold">DEF Up</span> and a
+                            <span class="fw-bold">Shield</span> to all allies for 2 turns. Shield strength
                             equals to 13% of Frigga's max HP + 25% of the
                             target's lost HP.
                           </p>
@@ -191,7 +202,7 @@
                             fallen, revives them first and then heals 10% of
                             their max HP. If the ally is not fallen, reduces
                             this ability's cooldown by 3 turn(s).<br />
-                            Grants Absorb and ATK Up to all allies for 2 turns
+                            Grants <span class="fw-bold">Absorb</span> and <span class="fw-bold">ATK Up</span> to all allies for 2 turns
                           </p>
                           <p>Cooldown 7 turns</p>
                           <p>
